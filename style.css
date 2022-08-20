@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    background-color: #7030CC;
+}
+.logo{
+    margin-left: 4%;
+    color: #15D9FD;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.head nav{
+    width: 85vw;
+    margin: auto;
+    height: 8vw;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-links{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 60%;
+    color: rgb(220, 220, 220);
+    align-items: center;
+}
+
+.nav-btn{
+    padding: 1em 1.5em;
+    background: #15D9FD;
+    border: none;
+    color: #ffffff
+}
+
+/* -----------------------hero------------------- */
+.hero{
+    display: flex;
+    align-items: center;
+}
+.left{
+    width: 50%;
+    padding: 13vh 5vw 10vh 10vw;
+}
+.right{
+    width: 50%;
+}
+
+.section-img{
+    width: 48vw;
+    margin-bottom: 13vh;
+    margin-top: -20px;
+}
+
+.hero-heading{
+    /* font-size: clamp(2rem,3rem,4rem); */
+    font-size: clamp(1rem, 5vw, 3rem); 
+    color: #ffffff;
+}
+
+p.normal{
+    color:rgb(220, 220, 220) ;
+    margin: 20px 0;
+    font-size: 1.3rem;
+}
+
+/* -----------------description----------------- */
+.desc{
+    display: flex;
+    align-items: center;
+}
+
+.desc .right{
+    margin-left: 10%;
+}
+
+h2.heading{
+    font-size: 3rem;
+    width: 70%;
+}
+.rows{
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.row-head{
+    font-size: 1.5rem;
+}
+
+.left .section-img{
+    width: 45vw;
+    padding-right: 10%;
+}
+
+/* ------------------feature----------------------- */
+.feature{
+    margin: auto;
+    text-align: center;
+}
+.feature h2.heading{
+    margin: auto;
+    width: 35%;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap;
+    /* width: 80vw; */
+    
+}
+
+.cards img{
+    width: 5vw;
+    margin: 20%;
+    /* padding: 2%; */
+    background-color: #15D9FD;
+    border-radius: 50%;
+    
+}
+
+
+
+.card{
+    width: 13vw;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 3%;
+    flex-basis: 30vw;
+}
+
+.card p.normal{
+    font-size: 1rem;
+}
+
+footer{
+    height: 5vh;
+    text-align: center;
+    font-size: 2rem;
+    padding: 5% 0;
+    color: #ffffff;
+    background-color: #7030CC;
+}
+
+
+
+/* --------------------media queries------------------- */
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) { }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { }
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 1024px) { 
+    .desc{
+        width: 100%;
+        margin: auto;
+        margin-top: 10%;
+    }
+
+    .desc .right{
+        margin-left: 5%;
+    }
+
+    h2.heading{
+        width: 90%;
+        font-size: 2rem;
+    }
+
+    .rows{
+        width: 80%;
+    }
+
+    .feature h2.heading{
+        width: 60%;
+        margin-top: 5%;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (max-width: 768px){ 
+
+    .logo{
+        margin-top: 10%;
+    }
+    nav .nav-links{
+        display: none;
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right {
+        width: 78%;
+        margin-top: 10%;
+      }
+
+    .section-img{
+        width: 80vw;
+        margin-bottom: 0;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .hero-heading{
+        font-size: 2.5rem;
+    }
+
+    .desc{
+        flex-direction: column;
+    }
+
+    .left .section-img {
+        width: 80vw;
+        margin: auto;
+        padding-right: 0;
+    }
+
+    .desc .right{
+        width: 100%;
+        margin-top: 0;
+        margin: 0;
+        padding: 0 10% ;
+    }
+    .desc .right .heading{
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .rows {
+        width: 80%;
+        margin: auto;
+      }
+
+    .feature h2.heading{
+        font-size: 2rem;
+        width: 100%;
+        padding: 10% 0 0 0 ;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 60vw;
+    }
+    .card img{
+        width: 20vw;
+        background: none;
+    }
+ }
